@@ -21,7 +21,11 @@ const orderSchema = new mongoose.Schema(
     ordertype: {
       type: String,
       default: "Wait For me to collect the order",
-      enum: [ "Wait For me to collect the order","Keep the order near my door step","Call me i will come right after"],
+      enum: [
+        "Wait For me to collect the order",
+        "Keep the order near my door step",
+        "Call me i will come right after",
+      ],
     },
     status: {
       type: String,
