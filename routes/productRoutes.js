@@ -68,10 +68,10 @@ router.get("/related-product/:pid/:cid", realtedProductController);
 router.get("/product-category/:slug", productCategoryController);
 
 // //payments routes
-// //token braintree token
-// router.get("/braintree/token", braintreeTokenController);
+//token braintree token
+router.get("/braintree/token", braintreeTokenController);
 
 // //payments
-// router.post("/braintree/payment", requireSignIn, brainTreePaymentController);
+router.post("/braintree/payment", requireSignIn, brainTreePaymentController);
 
 export default router;
