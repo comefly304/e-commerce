@@ -16,7 +16,7 @@ const Login = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://e-commerce-web-app-mfp4.onrender.com/api/auth/login", {
+      const res = await axios.post("https://e-commerce-app-2023-payment-gateway.onrender.com/api/auth/login", {
         email,
         password,
       });

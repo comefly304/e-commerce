@@ -9,7 +9,7 @@ export default function useCategory() {
   const getcategories = async () => {
     try {
       const { data } = await axios.get(
-        "https://e-commerce-web-app-mfp4.onrender.com/api/category/get-category"
+        "https://e-commerce-app-2023-payment-gateway.onrender.com/api/category/get-category"
       );
       setcategories(data?.category);
     } catch (err) {

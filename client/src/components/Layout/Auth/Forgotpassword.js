@@ -15,7 +15,7 @@ const Forgotpassword = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://e-commerce-web-app-mfp4.onrender.com/api/auth/forgot-password",
+        "https://e-commerce-app-2023-payment-gateway.onrender.com/api/auth/forgot-password",
         {
           email,
           answer,

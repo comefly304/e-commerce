@@ -21,7 +21,7 @@ const Homepage = () => {
   const gettoal = async () => {
     try {
       const { data } = await axios.get(
-        "https://e-commerce-web-app-mfp4.onrender.com/api/product/product-count"
+        "https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-count"
       );
       setTotal(data?.total);
     } catch (err) {
@@ -39,7 +39,7 @@ const Homepage = () => {
     try {
       setloading(true);
       const { data } = await axios.get(
-        `https://e-commerce-web-app-mfp4.onrender.com/api/product/product-list/${page}`
+        `https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-list/${page}`
       );
       setloading(false);
       setproducts([...products, ...data?.products]);
@@ -53,7 +53,7 @@ const Homepage = () => {
     try {
       setloading(true);
       const { data } = await axios.get(
-        `https://e-commerce-web-app-mfp4.onrender.com/api/product/product-list/${page}`
+        `https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-list/${page}`
       );
       setloading(false);
       setproducts(data.products);
@@ -68,7 +68,7 @@ const Homepage = () => {
   const getcategories = async () => {
     try {
       const { data } = await axios.get(
-        "https://e-commerce-web-app-mfp4.onrender.com/api/category/get-category"
+        "https://e-commerce-app-2023-payment-gateway.onrender.com/api/category/get-category"
       );
       if (data.success) {
         setcategories(data?.category);
@@ -108,7 +108,7 @@ const Homepage = () => {
   const filteredProducts = async () => {
     try {
       const { data } = await axios.post(
-        `https://e-commerce-web-app-mfp4.onrender.com/api/product/product-filters`,
+        `https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-filters`,
         { checked, radio }
       );
       setproducts(data?.products);
@@ -175,7 +175,7 @@ const Homepage = () => {
                   style={{ width: "18rem" }}
                 >
                   <img
-                    src={`https://e-commerce-web-app-mfp4.onrender.com/api/product/product-photo/${p._id}`}
+                    src={`https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-photo/${p._id}`}
                     className="homeimgtag card-img-top homeimg"
                     alt={p.name}
                   />

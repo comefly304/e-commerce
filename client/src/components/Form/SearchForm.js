@@ -9,7 +9,7 @@ const SearchForm = () => {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        `https://e-commerce-web-app-mfp4.onrender.com/api/product/search/${values.keyword}`
+        `https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/search/${values.keyword}`
       );
       setvalues({ ...values, results: data });
       naviagte("/search");

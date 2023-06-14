@@ -28,7 +28,7 @@ const Profile = () => {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        "https://e-commerce-web-app-mfp4.onrender.com/api/auth/profile",
+        "https://e-commerce-app-2023-payment-gateway.onrender.com/api/auth/profile",
         {
           name,
           email,
@@ -152,7 +152,7 @@ export default Profile;
 //     const handleSubmit = async (e) => {
 //       e.preventDefault();
 //       try {
-//         const { data } = await axios.put("https://e-commerce-web-app-mfp4.onrender.com/api/auth/profile", {
+//         const { data } = await axios.put("https://e-commerce-app-2023-payment-gateway.onrender.com/api/auth/profile", {
 //           name,
 //           email,
 //           password,

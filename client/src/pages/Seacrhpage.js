@@ -26,7 +26,7 @@ const Seacrhpage = () => {
                   style={{ width: "18rem" }}
                 >
                   <img
-                    src={`https://e-commerce-web-app-mfp4.onrender.com/api/product/product-photo/${p._id}`}
+                    src={`https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-photo/${p._id}`}
                     className="homeimgtag card-img-top homeimg"
                     alt={p.name}
                   />

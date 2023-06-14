@@ -11,7 +11,7 @@ const Products = () => {
   const getproducts = async () => {
     try {
       const { data } = await axios.get(
-        "https://e-commerce-web-app-mfp4.onrender.com/api/product/get-product"
+        "https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/get-product"
       );
       if (data.success) {
         setproducts(data.products);
@@ -44,7 +44,7 @@ const Products = () => {
                   >
                     <div className="cardetails card" style={{ width: "18rem" }}>
                       <img
-                        src={`https://e-commerce-web-app-mfp4.onrender.com/api/product/product-photo/${p._id}`}
+                        src={`https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-photo/${p._id}`}
                         className="card-img-top"
                         alt={p.name}
                       />

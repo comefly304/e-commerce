@@ -20,7 +20,7 @@ const ProductDetails = () => {
   const getProduct = async () => {
     try {
       const { data } = await axios.get(
-        `https://e-commerce-web-app-mfp4.onrender.com/api/product/get-product/${params.slug}`
+        `https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/get-product/${params.slug}`
       );
       setProduct(data?.product);
       getrelatedporducts(data?.product._id, data?.product.category._id);
@@ -32,7 +32,7 @@ const ProductDetails = () => {
   const getrelatedporducts = async (pid, cid) => {
     try {
       const { data } = await axios.get(
-        `https://e-commerce-web-app-mfp4.onrender.com/api/product/related-product/${pid}/${cid}`
+        `https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/related-product/${pid}/${cid}`
       );
       setRelatedProducts(data?.products);
     } catch (error) {
@@ -47,7 +47,7 @@ const ProductDetails = () => {
             <h4 className="card bg-light text-center">{product.name}</h4>
 
             <img
-              src={`https://e-commerce-web-app-mfp4.onrender.com/api/product/product-photo/${product._id}`}
+              src={`https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-photo/${product._id}`}
               className="card-img-top"
               alt={product.name}
             />
@@ -94,7 +94,7 @@ const ProductDetails = () => {
             style={{ width: "18rem" }}
           >
             <img
-              src={`https://e-commerce-web-app-mfp4.onrender.com/api/product/product-photo/${p._id}`}
+              src={`https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-photo/${p._id}`}
               className="homeimgtag card-img-top homeimg"
               alt={p.name}
             />

@@ -21,7 +21,7 @@ const CreateProduct = () => {
   const getcategories = async () => {
     try {
       const { data } = await axios.get(
-        "https://e-commerce-web-app-mfp4.onrender.com/api/category/get-category"
+        "https://e-commerce-app-2023-payment-gateway.onrender.com/api/category/get-category"
       );
       if (data.success) {
         setcategories(data.category);
@@ -50,7 +50,7 @@ const CreateProduct = () => {
       productsdata.append("category", category);
 
       const { data } = await axios.post(
-        "https://e-commerce-web-app-mfp4.onrender.com/api/product/create-product",
+        "https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/create-product",
         productsdata
       );
       if (data.success) {

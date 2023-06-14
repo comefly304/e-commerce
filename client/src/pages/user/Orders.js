@@ -24,7 +24,7 @@ const Orders = () => {
   //get orders
   const getOrders = async () => {
     try {
-      const { data } = await axios.get("https://e-commerce-web-app-mfp4.onrender.com/api/auth/orders");
+      const { data } = await axios.get("https://e-commerce-app-2023-payment-gateway.onrender.com/api/auth/orders");
       setOrders(data);
     } catch (err) {
       console.log(err);
@@ -42,7 +42,7 @@ const Orders = () => {
   const handleupdate = async (orderId, dogvalue) => {
     try {
       const { data } = await axios.put(
-        `https://e-commerce-web-app-mfp4.onrender.com/api/auth/order-dog-status/${orderId}`,
+        `https://e-commerce-app-2023-payment-gateway.onrender.com/api/auth/order-dog-status/${orderId}`,
         {
           dogstatus: dogvalue,
         }
@@ -57,7 +57,7 @@ const Orders = () => {
   const handleordertypeupdate = async (orderId, ordertypevalue) => {
     try {
       const { data } = await axios.put(
-        `https://e-commerce-web-app-mfp4.onrender.com/api/auth/order-type-status/${orderId}`,
+        `https://e-commerce-app-2023-payment-gateway.onrender.com/api/auth/order-type-status/${orderId}`,
         {
           ordertype: ordertypevalue,
         }
@@ -155,7 +155,7 @@ const Orders = () => {
                       >
                         <div className="col-md-4">
                           <img
-                            src={`https://e-commerce-web-app-mfp4.onrender.com/api/product/product-photo/${p._id}`}
+                            src={`https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-photo/${p._id}`}
                             className="card-img-top"
                             alt={p.name}
                           />

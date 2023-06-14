@@ -27,7 +27,7 @@ const AdminOrders = () => {
   const getOrders = async () => {
     try {
       const { data } = await axios.get(
-        "https://e-commerce-web-app-mfp4.onrender.com/api/auth/all-orders"
+        "https://e-commerce-app-2023-payment-gateway.onrender.com/api/auth/all-orders"
       );
       setOrders(data);
     } catch (err) {
@@ -46,7 +46,7 @@ const AdminOrders = () => {
   const handleupdate = async (orderId, value) => {
     try {
       const { data } = await axios.put(
-        `https://e-commerce-web-app-mfp4.onrender.com/api/auth/order-status/${orderId}`,
+        `https://e-commerce-app-2023-payment-gateway.onrender.com/api/auth/order-status/${orderId}`,
         {
           status: value,
         }
@@ -116,7 +116,7 @@ const AdminOrders = () => {
                       <div className="row mb-2 p-3 card flex-row" key={p._id}>
                         <div className="col-md-4">
                           <img
-                            src={`https://e-commerce-web-app-mfp4.onrender.com/api/product/product-photo/${p._id}`}
+                            src={`https://e-commerce-app-2023-payment-gateway.onrender.com/api/product/product-photo/${p._id}`}
                             className="card-img-top"
                             alt={p.name}
                           />
